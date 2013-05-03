@@ -209,6 +209,12 @@ public class Vector2D implements Serializable {
                 double magnitude = Math.sqrt(dotProduct(this));
                 return new Vector2D(x / magnitude, y / magnitude);
         }
+        
+        public void normalizeThis() {
+            double magnitude = Math.sqrt(dotProduct(this));
+            x = x / magnitude;
+            y = y / magnitude;
+        }
 
         public double level() {
                 return Math.sqrt(dotProduct(this));

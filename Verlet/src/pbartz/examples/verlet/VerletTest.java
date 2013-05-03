@@ -54,8 +54,8 @@ public class VerletTest {
 		long timeDiff = System.currentTimeMillis() - lastTimeStamp ;
 		
 		if (timeDiff > 500) {			
-			physics.vGravity.x = surface.mOrientation[1] / 5; 
-			physics.vGravity.y = surface.mOrientation[2] / 5;
+			physics.vGravity.x = surface.mOrientation[1] / 2; 
+			physics.vGravity.y = surface.mOrientation[2] / 2;
 			lastTimeStamp += timeDiff;		
 		}
 	}
